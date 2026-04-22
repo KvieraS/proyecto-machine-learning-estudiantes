@@ -1,0 +1,61 @@
+{
+  "shape": {
+    "rows": 1000,
+    "columns": 11
+  },
+  "missing_values": {
+    "horas_estudio_semanal": 0,
+    "nota_anterior": 0,
+    "tasa_asistencia": 0,
+    "horas_sueno": 150,
+    "edad": 0,
+    "nivel_dificultad": 0,
+    "tiene_tutor": 0,
+    "horario_estudio_preferido": 100,
+    "estilo_aprendizaje": 50,
+    "nota_final": 0,
+    "aprobado": 0
+  },
+  "duplicated_rows": 0,
+  "aprobado_distribution": {
+    "1": 0.898,
+    "0": 0.102
+  },
+  "regresion": {
+    "test": {
+      "mae": 5.816117180242132,
+      "rmse": 7.228086598688673,
+      "r2": 0.36130140576696324
+    },
+    "cv": {
+      "mae_cv_mean": 6.046195801424438,
+      "rmse_cv_mean": 7.587089136440868,
+      "r2_cv_mean": 0.36474917803854057
+    }
+  },
+  "clasificacion": {
+    "test": {
+      "accuracy": 0.7,
+      "balanced_accuracy": 0.6777777777777778,
+      "roc_auc": 0.8122222222222222,
+      "confusion_matrix": [
+        [
+          13,
+          7
+        ],
+        [
+          53,
+          127
+        ]
+      ],
+      "classification_report": "              precision    recall  f1-score   support\n\n           0     0.1970    0.6500    0.3023        20\n           1     0.9478    0.7056    0.8089       180\n\n    accuracy                         0.7000       200\n   macro avg     0.5724    0.6778    0.5556       200\nweighted avg     0.8727    0.7000    0.7583       200\n"
+    },
+    "cv": {
+      "accuracy_cv_mean": 0.729,
+      "precision_cv_mean": 0.9509566211242175,
+      "recall_cv_mean": 0.7360831781502173,
+      "f1_cv_mean": 0.829509870857722,
+      "roc_auc_cv_mean": 0.7864478584729981
+    }
+  }
+}
